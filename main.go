@@ -17,7 +17,7 @@ type Person struct {
 }
 
 func main() {
-	db, err := sql.Open("mysql", "root:root@tcp(127.0.0.1:3306)/gotest")
+	db, err := sql.Open("mysql", "root:root@tcp(127.0.0.1:3306)/db_person")
 	if err != nil {
 		fmt.Print(err.Error())
 	}
@@ -36,7 +36,7 @@ func main() {
 		})
 	})
 
-	r.GET("/persons", func(c *gin.Context) {
+	r.GET("/person", func(c *gin.Context) {
 		var (
 			person  Person
 			persons []Person
