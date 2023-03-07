@@ -11,6 +11,7 @@ pipeline{
                 echo 'Hello 123'
             }
             //change 123
+            //next
         }
     }
 }
