@@ -10,9 +10,6 @@ pipeline{
             steps{
                 echo 'Hello 123'
             }
-            //change 123
-            //next
         }
     }
 }
-//123
