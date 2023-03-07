@@ -3,17 +3,17 @@ pipeline{
     stages {
         stage('Build') {
             steps {
-                echo 'Building..'
+                echo '${BUILD_NUMBER}'
             }
         }
         stage('Test') {
             steps {
-                echo 'Testing..'
+                echo '${BUILD_TAG}'
             }
         }
         stage('Deploy') {
             steps {
-                echo 'Deploying....'
+                echo '${JENKINS_URL}'
             }
         }
     }
